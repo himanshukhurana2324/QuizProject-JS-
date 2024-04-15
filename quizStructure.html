@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>Quiz.js</title>
+    <link rel="stylesheet" href="quizStyle.css" />
+  </head>
+
+  <body>
+    <header class="hidden" id="header">
+      <h1>Quiz.js</h1>
+      <p>Do you know JS? Find out!</p>
+
+      <div id="score">
+        score:
+        <span id="correct">0</span>
+        /
+        <span id="completed">0</span>
+      </div>
+    </header>
+
+    <div class="begin" id="begin ">
+      <div>Wanna Start The Click !</div>
+      <div>Hit the Fire Button and Test The Knowledge</div>
+      <button name="start" id="fire" value="Fire">Fire</button>
+    </div>
+
+    <main class="hidden" id="main">
+      <div id="statement"></div>
+      <div id="options">
+        <button name="true" value="true" disabled>true</button>
+        <button name="false" value="false" disabled>false</button>
+      </div>
+      <div id="explanation"></div>
+
+      <button id="nextQuestion" name="nextQuestion" disabled>
+        Next Question -->
+      </button>
+
+      <button id="resBtn" name="showResult" class="hidden">Result...</button>
+    </main>
+
+    <div class="begin hidden" id="endContent">
+      <div>Thank You For Taking Part ...</div>
+
+      You Scored <span id="corAns">0</span> / <span id="comAns">0</span>
+      <div><button id="restart" name="restart">Restart</button></div>
+    </div>
+  </body>
+  <script src="quizLogic.js"></script>
+</html>
